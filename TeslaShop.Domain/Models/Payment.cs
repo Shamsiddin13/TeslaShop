@@ -9,6 +9,5 @@ public class Payment : Auditable
     public Order Order { get; set; }    
 
     public PaymentType PaymentMethod { get; set; }
-    public string TransactionsDetails { get; set; }
-    public string PaymentStatus { get; set; }
+    public PaymentStatus PaymentStatus { get; set; }
 }

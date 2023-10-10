@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TeslaShop.Domain.Enums;
+using TeslaShop.Domain.Models;
 
-namespace TeslaShop.Service.DTOs.Payment
+namespace TeslaShop.Service.DTOs.Payment;
+
+public class PaymentForResultDto
 {
-    internal class PaymentForResultDto
-    {
-    }
+    public long Id { get; set; }    
+    public long OrderId { get; set; }
+    public PaymentType PaymentMethod { get; set; }
+    public string PaymentStatus { get; set; }
 }

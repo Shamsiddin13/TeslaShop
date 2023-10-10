@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TeslaShop.Domain.Enums;
+using TeslaShop.Domain.Models;
 
-namespace TeslaShop.Service.DTOs.Orders
+namespace TeslaShop.Service.DTOs.Orders;
+
+public class OrderForUpdateDto
 {
-    internal class OrderForUpdateDto
-    {
-    }
+    public long Id { get; set; }
+    public long CustomerId { get; set; }
+    public long ProductId { get; set; }
+    public OrderStatus OrderStatus { get; set; }
+    public decimal TotalAmount { get; set; }
 }

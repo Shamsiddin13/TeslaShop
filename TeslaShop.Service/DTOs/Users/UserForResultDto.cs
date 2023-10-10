@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TeslaShop.Domain.Enums;
 
-namespace TeslaShop.Service.DTOs.Users
+namespace TeslaShop.Service.DTOs.Users;
+
+public class UserForResultDto
 {
-    internal class UserForResultDto
-    {
-    }
+    public long Id { get; set; }
+    public string Username { get; set; }
+    public string PhoneNumber { get; set; }
+    public string ShippingAddress { get; set; }
+    public UserRole Role { get; set; }
 }
